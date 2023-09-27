@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Memory Game</title>
+
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ICON -->
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+
+</head>
+<body>
+
+    <!-- END POPUPS -->
+    <div class="popup-container">
+        <div class="popup">
+            <h3 class="popup-message" style="margin-bottom: 0;">Completed in</h3>
+            <h3 class="popup-message" id="popup-message"></h3>
+
+            <div>
+                <a href="index.html" class="btn-light" style="animation: none; animation-duration: .8s;">Home</a>
+                <a class="btn btn-end" style="animation: tada; animation-duration: 1.2s; animation-delay: 1s">Play Again</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- CHRONO -->
+        <div class="time-container">
+            <span class="minutes timer">00</span>
+            <span class="separators">:</span>
+            <span class="seconds timer">00</span>
+            <span class="separators">.</span>
+            <span class="miliseconds timer">00</span>
+        </div>
+
+        <!-- GRID -->
+        <div class="grid-container">
+
+            <div class="grid">
+    
+                <div class="cell" data-number="1">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="2">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="3">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="4">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="5">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="6">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="7">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="8">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="9">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="10">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="11">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="12">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="13">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="14">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="15">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="16"> 
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="17">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="18">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="19">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="20">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="21">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="22">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="23">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+
+                <div class="cell" data-number="24">
+                    <img src="" alt="" class="card">
+                    <div class="back">
+                        <div class="back-border"></div>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+
+        <div class="buttons single-button">
+            <a href="index.html" class="btn-light">Home</a>
+            <a class="btn reset-btn">Restart</a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="marchetta">Handmade coded by <a href="https://gabrielepedesini.netlify.app/" target="_blank">Gabriele Pedesini</a></div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="assets/js/singleplayer.js"></script>
+
+</body>
+</html>
