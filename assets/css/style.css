@@ -422,7 +422,7 @@
     top: 0;
     left: 0;
     z-index: 10;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -460,6 +460,7 @@
     text-align: center;
     line-height: 48px;
 }
+
 
 .popup div {
     display: flex;
