@@ -16,14 +16,34 @@
 }
 
 :root {
-    --text: #ebfbe5;
-    --background: #010300;
+
+    /* --text: #ffffff;
+    --background: #090102;
     --background-alt: #000000;
-    --primary: #36dd5d;
-    --primary-alt: #1c8535;
-    --secondary: #083025;
-    --tertiary: #17473a;
-    --accent: #29dbab;
+    --primary: #dd222f;
+    --primary-alt: #b91520;
+    --secondary: #280608;
+    --tertiary: #520d12;
+    --accent: #d8222e; */
+
+
+    /* --text: #dce8fe;
+    --background: #010d23;
+    --background-alt: #000816;
+    --primary: #053b9e;
+    --primary-alt: #042e7c;
+    --secondary: #021231;
+    --tertiary: #062564;
+    --accent: #085cf7; */
+
+    --text: #e1fdfe;
+    --background: #000a0a;
+    --background-alt: #000505;
+    --primary: #e40e07;
+    --primary-alt: #a70a04;
+    --secondary: #02484a;
+    --tertiary: #04686b;
+    --accent: #f73e38;
 }
 
 .container {
@@ -48,7 +68,7 @@
     text-align: center;
     font-weight: 700;
 
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 
     background: var(--primary);
     background: linear-gradient(to top right, var(--primary) 0%, var(--accent) 100%);
@@ -59,13 +79,28 @@
     animation-duration: .8s;
 }
 
+.home-img {
+    width: 220px;
+    height: 220px;
+
+    animation: bounceIn;
+    animation-duration: .8s;
+}
+
+.grid-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); /* Adjust the row height as needed */
+    gap: 8px; /* Adjust the gap between cells as needed */
+}
+
 .buttons-home {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
 
-    margin-top: 60px;
+    margin-top: 80px;
 
     animation: bounceInRight;
     animation-duration: .8s;
@@ -242,6 +277,9 @@
     background: linear-gradient(to top right, var(--primary) 0%, var(--accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    animation: rubberBand;
+    animation-duration: .8s;
 }
 
 /* BUTTONS */
@@ -270,7 +308,7 @@
 }
 
 .btn:hover {
-    background-color: #64ff88;
+    background-color: #f71f17;
     transition: .3s;
 }
 
@@ -289,7 +327,7 @@
 }
 
 .btn-light:hover {
-    background-color: #1f5f4e;
+    background-color: #047f83;
     transition: .3s;
 }
 
@@ -354,7 +392,7 @@
     background-color: transparent;
     border-radius: 12px;
     color: var(--text);
-    border: 2px solid var(--tertiary);
+    border: 2px solid var(--accent);
     text-decoration: none;
     font-size: 24px;
     font-weight: 700;
@@ -372,9 +410,9 @@
 }
 
 .btn-mode:hover {
-    background-color: var(--tertiary);
+    background-color: var(--accent);
     color: var(--text);
-    border: 2px solid var(--tertiary);
+    border: 2px solid var(--accent);
     transition: .3s;
     cursor: pointer;
 
@@ -521,6 +559,23 @@ footer {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+
+    .scores-container {
+        display: flex;
+        column-gap: 30px;
+        row-gap: 15px;
+    
+        flex-wrap: wrap;
+    }
+
+    .player-score {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -528,7 +583,7 @@ footer {
     .title {
         font-family: 'Inter', sans-serif;
         font-size: 32px;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
     }
 
     .section-title {
@@ -549,7 +604,7 @@ footer {
     }
 
     .buttons-home {
-        margin-top: 20px;
+        margin-top: 60px;
     }
 
     .bottom-btn {
