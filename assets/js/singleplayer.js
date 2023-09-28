@@ -180,7 +180,7 @@ function winChecker() {
 
         const popupContainer = document.querySelector('.popup-container');
         const popupMessage = document.getElementById('popup-message');
-        popupMessage.innerText = minutes + ' : ' + seconds + ' . ' + milliseconds;
+        popupMessage.innerText = minutes + ':' + seconds + '.' + milliseconds;
         popupContainer.style.display = 'flex';
     }
 }
