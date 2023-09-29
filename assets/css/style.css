@@ -80,8 +80,8 @@
 }
 
 .home-img {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
 
     animation: bounceIn;
     animation-duration: .8s;
@@ -91,7 +91,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr); /* Adjust the row height as needed */
-    gap: 8px; /* Adjust the gap between cells as needed */
+    gap: 12px; /* Adjust the gap between cells as needed */
+}
+
+.bounce-card {
+    animation: tada infinite;
+    animation-duration: 1s;
+    animation-delay: 1s;
 }
 
 .buttons-home {
@@ -582,7 +588,7 @@ footer {
 
     .title {
         font-family: 'Inter', sans-serif;
-        font-size: 32px;
+        font-size: 36px;
         margin-bottom: 50px;
     }
 
@@ -641,5 +647,24 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(8, 1fr); /* Adjust the row height as needed */
         gap: 15px; /* Adjust the gap between cells as needed */
+    }
+
+    .grid-img {
+        gap: 10px;
+    }
+
+    .home-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+
+    .btn-light {
+        padding: 8px 18px;
+        font-size: 16px;
     }
 }
